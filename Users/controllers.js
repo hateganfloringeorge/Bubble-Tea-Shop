@@ -38,7 +38,7 @@ router.post('/registerAdmin', async (req, res, next) => {
     const fieldsToBeValidated = {
       username: {
         value: username,
-        type: 'alpha',
+        type: 'ascii',
       },
       password: {
         value: password,
@@ -146,7 +146,6 @@ router.get('/', authorizeAndExtractToken, authorizeRoles('admin'), async (req, r
     next(err);
   }
 });
-
 
 router.get('/confirmation/:id', async (req, res, next) => {
   const {

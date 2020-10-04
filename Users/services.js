@@ -69,7 +69,7 @@ const authenticate = async (username, password) => {
   const email = await Users.findOne({ email: username });
 
   if (foundUser === null && email === null) {
-    throw new ServerError(`Utilizatorul inregistrat cu ${username} nu exista!`, 404);
+    throw new ServerError(`User with username ${username} does not exist!`, 404);
   }
 
   if (foundUser === null) {
@@ -92,7 +92,7 @@ const authenticate = async (username, password) => {
       token,
     };
   }
-  throw new ServerError('Combinatia de username si parola nu este buna!', 404);
+  throw new ServerError('User and password combination is not good!', 404);
 };
 
 module.exports = {
