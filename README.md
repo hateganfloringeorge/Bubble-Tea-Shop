@@ -91,6 +91,7 @@ There are 4 user types that can interact with the website:
     }
     
 **Response** - String
+
     Please, comfirm your email address!
 ---
 
