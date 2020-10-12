@@ -98,7 +98,7 @@ const Footer = () => {
                             </ul><br></br>
                             <p><span class="glyphicon glyphicon-earphone"></span> +40 746 901 983</p>
                             <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:hateganfloringeorge@gmail.com" title="glorythemes">bubbletea@gmail.com</a></p>
-                            <p><span class="glyphicon glyphicon-star"></span> Write a review here.</p>
+                            <p><span class="glyphicon glyphicon-star"></span> Write a review <NavLink to="/review"><a>here.</a></NavLink></p>
                             <p><span class="glyphicon glyphicon-flag"></span>Bucharest, General Vasile Milea Boulevard, AFI Cotroceni Mall, 061344</p>
                         </div>
                     </div>

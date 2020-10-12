@@ -14,6 +14,7 @@ import GDPR from './components/GDRP.js';
 import { UserContext } from './components/UserContext';
 import Review from './components/Review';
 import EditQuestion from  './components/EditQuestion';
+import ScrollIntoView from './components/ScrollToTop';
 
 import './App.scss';
 
@@ -28,6 +29,7 @@ function App() {
     <div className="App">
       <HashRouter basename="/">
       <UserContext.Provider value={value}>
+      <ScrollIntoView>
       <NavHeader />
         <Switch>
           <Route exact path={"/"} component={HomePage} />
@@ -43,6 +45,7 @@ function App() {
           <Route path={"/review"} component={Review}/>
         </Switch>
       <Footer />
+      </ScrollIntoView>
       </UserContext.Provider>
       </HashRouter>
     </div>
